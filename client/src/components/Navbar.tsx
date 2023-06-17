@@ -47,6 +47,7 @@ const Navbar = () => {
   return (
     <Box
         position='fixed'
+        zIndex={2}
         bg='#d9d9d96b'
         display='flex'
         justifyContent='space-between'
