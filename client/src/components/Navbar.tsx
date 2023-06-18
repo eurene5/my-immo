@@ -17,7 +17,7 @@ type Props = {
 
 const LinkItem = ({href, children}: Props) => {
     const color = children === 'Se connecter' ? '#1E0E5C': 'inherit'
-    
+
     return (
         <NextLink href={href}>
             <Box 
