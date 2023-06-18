@@ -1,7 +1,7 @@
 "use client";
 
 import { ChakraProvider, extendTheme, Container, Box } from '@chakra-ui/react'
-import Header from '@/components/Header';
+import HomePage from './pages/HomePage';
 
 const theme = extendTheme({
   fonts: {
@@ -14,7 +14,7 @@ export default function Home({children}: {children: React.ReactNode}) {
   return (
     <ChakraProvider theme={theme}>
       <Box background-color='d9d9d9'>
-        <Header/>
+        <HomePage/>
       </Box>
       <Container>
         {children}

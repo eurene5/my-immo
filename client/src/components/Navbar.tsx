@@ -17,7 +17,7 @@ type Props = {
 
 const LinkItem = ({href, children}: Props) => {
     const color = children === 'Se connecter' ? '#1E0E5C': 'inherit'
-    
+
     return (
         <NextLink href={href}>
             <Box 
@@ -47,6 +47,7 @@ const Navbar = () => {
   return (
     <Box
         position='fixed'
+        zIndex={2}
         bg='#d9d9d96b'
         display='flex'
         justifyContent='space-between'
